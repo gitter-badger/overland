@@ -143,11 +143,12 @@ export default class Overland extends Koa {
           });
         } else {
           const found = app.controllers.map(ctrl => ctrl.controller).join(', ');
-          const err = `App '${ appName }' has no such controller '${ controller }': found [${ found  }]`;
+          const err = `App '${ appName }' has no such controller '${ controller }': found [ ${ found  } ]`;
           throw new Error(err);
         }
       } else {
-        throw new Error(`No such app '${ appName }'!`);
+        const found = this.settings.apps.map(app => app.app).join(', ');
+        throw new Error(`No such app '${ appName }': found [ ${ found } ]!`);
       }
     });
     return this.router.routes();

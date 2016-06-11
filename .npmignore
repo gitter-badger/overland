@@ -4,3 +4,6 @@
 !forms.*
 !helpers.*
 !migrations.*
+test
+src
+.nyc_output

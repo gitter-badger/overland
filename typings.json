@@ -1,0 +1,19 @@
+{
+  "ambientDependencies": {
+    "bluebird": "github:DefinitelyTyped/DefinitelyTyped/bluebird/bluebird.d.ts#dd328830dddffbe19e9addd7cf8532cbd3600816",
+    "camel-case": "github:DefinitelyTyped/DefinitelyTyped/camel-case/camel-case.d.ts#4de74cb527395c13ba20b438c3a7a419ad931f1c",
+    "camelcase": "github:DefinitelyTyped/DefinitelyTyped/camelcase/camelcase.d.ts#47f676c60034918529f22b80fc5a4dab873bd189",
+    "chalk": "github:DefinitelyTyped/DefinitelyTyped/chalk/chalk.d.ts#2ed78584e44ade4e4d15b14b7cb00db076434819",
+    "consolidate": "github:DefinitelyTyped/DefinitelyTyped/consolidate/consolidate.d.ts#a3e6a6101300a2936c6187c79b827d7b95748af2",
+    "inquirer": "github:DefinitelyTyped/DefinitelyTyped/inquirer/inquirer.d.ts#d5d918d4de0ea3634156e23d346e0eb567d007fb",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#f696b8c0c2d6e2a31c794a3752f68de85dce4c2b",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#20e1eb9616922d382d918cc5a21870a9dbe255f5",
+    "nunjucks": "github:DefinitelyTyped/DefinitelyTyped/nunjucks/nunjucks.d.ts#319e7ee11151671250cc3704f06629cf19c81389",
+    "rx": "github:DefinitelyTyped/DefinitelyTyped/rx/rx.d.ts#4d86cc24082d6703ecaee46ecc970bd0ac744236",
+    "sinon": "github:DefinitelyTyped/DefinitelyTyped/sinon/sinon.d.ts#6e7d83167d86d857817bd492786f8304f5c4a0e4",
+    "through": "github:DefinitelyTyped/DefinitelyTyped/through/through.d.ts#4de74cb527395c13ba20b438c3a7a419ad931f1c"
+  },
+  "globalDependencies": {
+    "debug": "registry:dt/debug#0.0.0+20160317120654"
+  }
+}

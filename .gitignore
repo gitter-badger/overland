@@ -1,0 +1,17 @@
+.DS_Store
+
+node_modules
+coverage
+.nyc_output
+!typings/overland
+typings/*
+
+# Ignore generated files.
+lib/*
+test/*
+core.*
+db.*
+forms.*
+helpers.*
+migrations.*
+**/*.js.map;

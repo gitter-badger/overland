@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": ".",
+    "inlineSourceMap": true
+  },
+  "exclude": [
+    "lib",
+    "lib/forms",
+    "node_modules",
+    "test",
+    "typings",
+    "*.js"
+  ]
+}

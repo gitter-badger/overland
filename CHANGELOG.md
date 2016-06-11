@@ -1,4 +1,8 @@
 # Overland Changelog
+## 0.2.2
+## Fixed
+- PascalCased files with default class exports, fixed errors resulting from those changes.
+
 ## 0.2.1
 Take three?
 

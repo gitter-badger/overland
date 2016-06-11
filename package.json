@@ -1,6 +1,6 @@
 {
   "name": "overland",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Batteries-included MVC framework powered by Koa.",
   "author": "Noah Lange <noahrlange@gmail.com>",
   "repository": {

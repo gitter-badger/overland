@@ -1,4 +1,10 @@
 # Overland Changelog
+## 0.2.1
+Take three?
+
+### Fixed
+- addressed typo'd requires in `src/migrations.ts`.
+
 ## 0.2.0
 Take two at an initial release. 😑
 

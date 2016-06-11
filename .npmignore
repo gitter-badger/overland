@@ -1,0 +1,6 @@
+!lib/*
+!core.*
+!db.*
+!forms.*
+!helpers.*
+!migrations.*

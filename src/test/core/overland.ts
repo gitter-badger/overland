@@ -26,7 +26,7 @@ test('should throw if an app is missing', async function(t) {
     badApp.init()
       .then(resolve)
       .catch(reject);
-  }), `No such app 'myBlog'!`);
+  }), `No such app 'myBlog': found [  ]!`);
 });
 
 test('should throw if an app is missing a controller specified in the router', async function(t) {

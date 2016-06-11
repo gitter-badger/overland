@@ -1,4 +1,4 @@
-import Field from '../field';
+import Field from '../Field';
 
 export default class BigIncrementsField extends Field {
   public fieldType = 'bigincrements';

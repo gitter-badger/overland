@@ -1,6 +1,5 @@
 /// <reference path="../../../../typings/index.d.ts" />
 import Migration from '../../../lib/db/migration';
-import * as Operations from '../../../lib/db/operations';
 import * as test from 'ava';
 import * as Knex from 'knex';
 import * as sinon from 'sinon';

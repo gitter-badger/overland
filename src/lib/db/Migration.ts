@@ -43,7 +43,7 @@ export default class Migration {
 
   // Returns an inquirer prompt, wrapped in a promise - allows us to hang execution of the loopy-whoopy things without blocking.
   public static prompt(question: inquirer.Question): Promise<any> {
-    return new Promise((resolve, reject) => inquirer.prompt([question], answers => resolve(answers)))
+    return new Promise((resolve, reject) => inquirer.prompt([question], answers => resolve(answers)));
   }
 
   // Filters out the fields proprty of a table, mappable or not.

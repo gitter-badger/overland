@@ -1,18 +1,18 @@
 /// <reference path="../../../../../typings/index.d.ts" />
-import { TableOperation, FieldOperation } from '../operation';
+import { TableOperation } from '../operation';
 import * as Knex from 'knex';
 
 interface IDeleteModelOpts {
   name: string;
 }
 
-class DropModel extends TableOperation {
+export default class DropModel extends TableOperation {
   public table: string;
   public execute(schema: Knex.SchemaBuilder) {
     return schema.dropTableIfExists(this.table);
   }
-  
-  public toString() {
+
+  public toString(): string {
     return `\t\tnew ${ this.constructor.name }({ name: '${ this.table }' })`;
   }
 
@@ -21,5 +21,3 @@ class DropModel extends TableOperation {
     this.table = opts.name;
   }
 }
-
-export { DropModel as default };

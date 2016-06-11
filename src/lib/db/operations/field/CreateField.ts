@@ -1,17 +1,17 @@
 /// <reference path="../../../../../typings/index.d.ts" />
 import { IFieldSchema } from '../../../interfaces';
-import { TableOperation, FieldOperation } from '../operation';
+import { FieldOperation } from '../operation';
 import * as Knex from 'knex';
 import * as debugFn from 'debug';
 import * as stringify from 'stringify-object';
 
 const debug = debugFn('overland:migrations');
 
-class CreateField extends FieldOperation {
-  
+export default class CreateField extends FieldOperation {
+
   public args: any[];
   public schema: IFieldSchema;
-  
+
   public static args(schema: IFieldSchema): any[] {
     const type = schema.type;
     const opts = schema.opts || {};
@@ -30,7 +30,7 @@ class CreateField extends FieldOperation {
     }
     return res.filter(a => !!a);
   }
-  
+
   public execute(table: Knex.TableBuilder): void {
     debug(`\tcreating ${ this.schema.type } column ${ this.schema.name }`);
     const col: Knex.ColumnBuilder = table[this.schema.type](...this.args);
@@ -62,8 +62,8 @@ class CreateField extends FieldOperation {
       col.notNullable();
     }
   }
-  
-  toString() {
+
+  public toString(): string {
     return `\t\t\t\tnew CreateField(${ stringify(this.schema )})`;
   }
 
@@ -73,5 +73,3 @@ class CreateField extends FieldOperation {
     this.args = CreateField.args(this.schema);
   }
 }
-
-export { CreateField as default };

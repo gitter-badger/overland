@@ -3,6 +3,8 @@
 # Overland
 ## Web application framework for Node.js
 
+[![Join the chat at https://gitter.im/overlandjs/overland](https://badges.gitter.im/overlandjs/overland.svg)](https://gitter.im/overlandjs/overland?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Overland is an MVC web application framework inspired by Rails and Django, built on Koa 2.x and oriented toward rapid development using the latest features in JavaScript.
 
 Overland doesn't re-invent the wheel -- if there's a module that performs a task well, Overland takes advantage of it -- Models and DB are provided by Objection.js and Knex, Rails-style routing is provided by Route-Mapper. Accordingly, Overland's core codebase is fairly svelte - in its current state, ~1500 lines.
